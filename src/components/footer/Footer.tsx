@@ -10,7 +10,7 @@ const Footer = () => {
             <a href="/" className="flex items-center">
               <div className="relative object-contain w-10 h-10 mr-2">
                 <Image
-                  src="/Pngfullstack.png"
+                  src="/svg/iconCode.svg"
                   className="h-8 me-3"
                   alt="FlowBite Logo"
                   fill={true}
@@ -18,7 +18,7 @@ const Footer = () => {
                 />
               </div>
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                Apple Zone
+                My Portafolio
               </span>
             </a>
           </div>
