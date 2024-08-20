@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Spline from "@splinetool/react-spline";
+import Link from "next/link";
 function IndexInicio() {
   return (
     <div id="inicio" className="mb-96 mt-20">
@@ -43,6 +44,11 @@ function IndexInicio() {
           </p>
         </div>
       </div>
+      <Link href="https://docs.google.com/document/d/1NzKnW68FvUZbR2X27A05MP1xOlZ8643fgz_gEpaQzsI/edit?usp=sharing">
+        <button className="btn btn-primary bg-violet-700 border-none text-3xl">
+          Curriculum CV
+        </button>
+      </Link>
     </div>
   );
 }
