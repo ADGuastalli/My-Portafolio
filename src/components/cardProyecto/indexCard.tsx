@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import ImagenM4 from "../../../public/Proyectos/m4.png";
 import ImagenM3 from "../../../public/Proyectos/m3.png";
-import ImagenMF from "../../../public/Proyectos/mf.png";
+import ImagenMF from "../../../public/Proyectos/mfa.png";
 import { Carousel } from "flowbite-react";
 import ImgGit from "../../../public/svg/tec/github-142-svgrepo-com.svg";
 import ImgDepl from "../../../public/svg/tec/deploy-svgrepo-com.svg";
