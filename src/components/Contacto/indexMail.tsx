@@ -57,11 +57,11 @@ function ContactMail() {
         .then(
           () => {
             toast.success("Email Enviado Exitosamente", {
-              position: "top-right",
+              position: "bottom-right",
               autoClose: 3000,
               hideProgressBar: false,
               closeOnClick: true,
-              pauseOnHover: true,
+              pauseOnHover: false,
               draggable: true,
               progress: undefined,
               theme: "light",
@@ -150,7 +150,7 @@ function ContactMail() {
         <div className="flex justify-center mt-4">
           <input
             disabled={!todosLosCamposCompletos()}
-            className="disabled:opacity-50 disabled:cursor-not-allowed bg-gray-400 border-none rounded-lg text-black py-4 px-8 text-center no-underline inline-block text-sm cursor-pointer hover:bg-white hover:text-black hover:shadow-[0_0_20px_rgba(255,255,255,0.8)]"
+            className="disabled:opacity-50 disabled:cursor-not-allowed bg-violet-900 border-none rounded-lg text-white py-4 px-8 text-center no-underline inline-block text-sm cursor-pointer hover:bg-violet-700 hover:text-black hover:shadow-[0_0_20px_rgba(255,255,255,0.8)]"
             type="submit"
             value="Enviar"
           />
