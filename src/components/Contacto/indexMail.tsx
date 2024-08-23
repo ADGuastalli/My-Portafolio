@@ -158,7 +158,7 @@ function ContactMail() {
         <div className="flex justify-center mt-4">
           <input
             disabled={!todosLosCamposCompletos()}
-            className="disabled:opacity-50 disabled:cursor-not-allowedm-4 text-xl relative z-[2] rounded-full border-2 text-[#e2E9ff] dark:text-[#140e36] border-[#C9bfb5] dark:border-[#7d5683] bg-[#7d5683] dark:bg-[#C9bfb5]  px-6 py-2 font-bold uppercase leading-normal transition duration-150 ease-in-out hover:bg-[#402158] dark:hover:bg-[#d0b69b]"
+            className="disabled:opacity-50 disabled:cursor-not-allowed m-4 text-xl relative z-[2] rounded-full border-2 text-[#e2E9ff] dark:text-[#140e36] border-[#C9bfb5] dark:border-[#7d5683] bg-[#7d5683] dark:bg-[#C9bfb5]  px-6 py-2 font-bold uppercase leading-normal transition duration-150 ease-in-out hover:bg-[#402158] dark:hover:bg-[#d0b69b]"
             type="submit"
             value="Enviar"
           />

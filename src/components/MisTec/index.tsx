@@ -15,7 +15,7 @@ import Image from "next/image";
 export function MisTec() {
   return (
     <div id="tecnologias" className="mt-20">
-      <h1 className="text-6xl font-bold text-center text-[#402158] dark:text-[#E2E9FF] hover:shadow-md hover:translate-x-1 transition duration-300 md:text-5xl lg:text-6xl xl:text-7xl">
+      <h1 className="text-6xl font-bold text-center text-[#402158] dark:text-[#E2E9FF]  hover:translate-x-1 transition duration-300 md:text-5xl lg:text-6xl xl:text-7xl">
         Mis Tecnologias
       </h1>
       <div className="grid grid-cols-5 gap-10 mt-5">

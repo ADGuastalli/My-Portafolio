@@ -5,6 +5,7 @@
 html {
   scrollbar-color: rgb(94, 3, 180) rgba(128, 128, 128, 0);
   scrollbar-width: auto;
+  scroll-behavior: smooth;
 }
 
 body {
