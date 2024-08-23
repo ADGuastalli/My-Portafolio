@@ -87,14 +87,16 @@ function ContactMail() {
 
   return (
     <div>
-      <h2 className="text-3xl font-bold m-10 text-center">
+      <h2 className="text-3xl font-bold m-10 text-center text-[#402158] dark:text-[#E2E9FF]">
         Queres enviarme un mensajito ?
       </h2>
       <form ref={form} onSubmit={sendEmail}>
         <div>
-          <label htmlFor="name">Nombre/s y Apellido/s:</label>
+          <label htmlFor="name" className="text-[#402158] dark:text-[#E2E9FF]">
+            Nombre/s y Apellido/s:
+          </label>
           <input
-            className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            className="block py-2.5 px-0 w-full text-sm text-[#402158] dark:text-[#E2E9FF] bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             type="text"
             name="user_name"
             id="name"
@@ -107,9 +109,11 @@ function ContactMail() {
           )}
         </div>
         <div>
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email" className="text-[#402158] dark:text-[#E2E9FF]">
+            Email:
+          </label>
           <input
-            className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            className="block py-2.5 px-0 w-full text-sm text-[#402158] dark:text-[#E2E9FF] bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             type="email"
             name="user_email"
             id="email"
@@ -122,9 +126,14 @@ function ContactMail() {
           )}
         </div>
         <div>
-          <label htmlFor="message">Mensaje:</label>
+          <label
+            htmlFor="message"
+            className="text-[#402158] dark:text-[#E2E9FF]"
+          >
+            Mensaje:
+          </label>
           <textarea
-            className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            className="block py-2.5 px-0 w-full text-sm text-[#402158] dark:text-[#E2E9FF] bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             id="message"
             name="message"
             onChange={handleInputChange}
@@ -141,7 +150,6 @@ function ContactMail() {
               color: "red",
               fontSize: "15px",
               marginTop: "10px",
-              textShadow: "1px 1px 1px black",
             }}
           >
             * Todos los campos son obligatorios
@@ -150,7 +158,7 @@ function ContactMail() {
         <div className="flex justify-center mt-4">
           <input
             disabled={!todosLosCamposCompletos()}
-            className="disabled:opacity-50 disabled:cursor-not-allowed bg-violet-900 border-none rounded-lg text-white py-4 px-8 text-center no-underline inline-block text-sm cursor-pointer hover:bg-violet-700 hover:text-black hover:shadow-[0_0_20px_rgba(255,255,255,0.8)]"
+            className="disabled:opacity-50 disabled:cursor-not-allowedm-4 text-xl relative z-[2] rounded-full border-2 text-[#e2E9ff] dark:text-[#140e36] border-[#C9bfb5] dark:border-[#7d5683] bg-[#7d5683] dark:bg-[#C9bfb5]  px-6 py-2 font-bold uppercase leading-normal transition duration-150 ease-in-out hover:bg-[#402158] dark:hover:bg-[#d0b69b]"
             type="submit"
             value="Enviar"
           />

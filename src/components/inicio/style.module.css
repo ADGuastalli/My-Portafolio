@@ -1,0 +1,4 @@
+.Image {
+  mask-image: linear-gradient(black 80%, transparent);
+  filter: drop-shadow(0 0 10px rgba(114, 110, 255, 0.9));
+}

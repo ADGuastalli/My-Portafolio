@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-transparent dark:bg-gray-900 mt-40">
+    <footer className="bg-[#E2E9FF] dark:bg-[#140E36]">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
@@ -17,17 +17,17 @@ const Footer = () => {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <span className="self-center text-2xl font-semibold whitespace-nowrap text-[#402158] dark:text-[#E2E9FF]">
                 My Portafolio
               </span>
             </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-[#402158] dark:text-[#E2E9FF] uppercase">
                 Resources
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-[#402158] dark:text-[#E2E9FF] font-medium">
                 <li className="mb-4">
                   <a href="https://nextjs.org/" className="hover:underline">
                     Next JS
@@ -44,10 +44,10 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-[#402158] dark:text-[#E2E9FF] uppercase">
                 Follow us
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-[#402158] dark:text-[#E2E9FF] font-medium">
                 <li className="mb-4">
                   <a
                     href="https://github.com/ADGuastalli"
@@ -68,9 +68,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <hr className="my-6  sm:mx-auto border-[#140e36] dark:border-[#E2e9ff] lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          <span className="text-sm text-[#402158] dark:text-[#E2E9FF] sm:text-center ">
             © 2024{" "}
             <a href="/" className="hover:underline">
               My-Porfolio
@@ -80,7 +80,7 @@ const Footer = () => {
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             <a
               href="https://www.facebook.com/aLecEn/"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-[#402158] dark:text-[#E2E9FF] hover:text-gray-900 "
             >
               <svg
                 className="w-4 h-4"
@@ -99,7 +99,7 @@ const Footer = () => {
             </a>
             <a
               href="https://discord.gg/mrmauPYXbq"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              className="text-[#402158] dark:text-[#E2E9FF] hover:text-gray-900 dark:hover:text-white ms-5"
             >
               <svg
                 className="w-4 h-4"
@@ -115,7 +115,7 @@ const Footer = () => {
 
             <a
               href="https://github.com/ADGuastalli"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              className="text-[#402158] dark:text-[#E2E9FF] hover:text-gray-900 dark:hover:text-white ms-5"
             >
               <svg
                 className="w-4 h-4"

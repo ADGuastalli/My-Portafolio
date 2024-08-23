@@ -3,13 +3,12 @@
 @tailwind utilities;
 
 html {
-  scroll-behavior: smooth;
+  scrollbar-color: rgb(94, 3, 180) rgba(128, 128, 128, 0);
+  scrollbar-width: auto;
 }
 
 body {
-  background-image: url("../../public/code-5067826_1280.jpg");
-  background-size: cover;
-  background-attachment: fixed;
+  scrollbar-width: none;
   margin: 0;
   padding: 0;
   color: white;

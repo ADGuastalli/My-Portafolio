@@ -14,22 +14,22 @@ import Image from "next/image";
 
 export function MisTec() {
   return (
-    <div id="tecnologias" className="mt-20 mb-48">
-      <h1 className="text-6xl font-bold text-center text-white hover:text-violet-700 hover:shadow-md hover:translate-x-1 transition duration-300">
+    <div id="tecnologias" className="mt-20">
+      <h1 className="text-6xl font-bold text-center text-[#402158] dark:text-[#E2E9FF] hover:shadow-md hover:translate-x-1 transition duration-300 md:text-5xl lg:text-6xl xl:text-7xl">
         Mis Tecnologias
       </h1>
       <div className="grid grid-cols-5 gap-10 mt-5">
-        <div className="relative bg-white/80 rounded-3xl p-3 transition-transform duration-300 hover:shadow-violet-700 hover:shadow-2xl hover:scale-105">
+        <div className="relative bg-[#e2ddd8] dark:bbg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-transform duration-300 hover:shadow-[#100E36] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl hover:scale-105">
           <Image src={ImgHtml} alt="Html" width={200} height={200} />
         </div>
-        <div className="relative bg-white/80 rounded-3xl p-3 transition-transform duration-300 hover:shadow-violet-700 hover:shadow-2xl hover:scale-105">
+        <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-transform duration-300 hover:shadow-[#100E36] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl hover:scale-105">
           <Image src={ImgCss} alt="Css" width={200} height={200} />
         </div>
 
-        <div className="relative bg-white/80 rounded-3xl p-3 transition-transform duration-300 hover:shadow-violet-700 hover:shadow-2xl hover:scale-105">
+        <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-transform duration-300 hover:shadow-[#100E36] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl hover:scale-105">
           <Image src={ImgType} alt="TypeScript" width={200} height={200} />
         </div>
-        <div className="relative bg-white/80 rounded-3xl p-3 transition-transform duration-300 hover:shadow-violet-700 hover:shadow-2xl hover:scale-105">
+        <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-transform duration-300 hover:shadow-[#100E36] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl hover:scale-105">
           <Image
             src={ImgJavascript}
             alt="JavaScript"
@@ -37,25 +37,25 @@ export function MisTec() {
             height={200}
           />
         </div>
-        <div className="relative bg-white/80 rounded-3xl p-3 transition-transform duration-300 hover:shadow-violet-700 hover:shadow-2xl hover:scale-105">
+        <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-transform duration-300 hover:shadow-[#100E36] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl hover:scale-105">
           <Image src={ImgNext} alt="Next" width={200} height={200} />
         </div>
-        <div className="relative bg-white/80 rounded-3xl p-3 transition-transform duration-300 hover:shadow-violet-700 hover:shadow-2xl hover:scale-105">
+        <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-transform duration-300 hover:shadow-[#100E36] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl hover:scale-105">
           <Image src={ImgNode} alt="Node" width={200} height={200} />
         </div>
-        <div className="relative bg-white/80 rounded-3xl p-3 transition-transform duration-300 hover:shadow-violet-700 hover:shadow-2xl hover:scale-105">
+        <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-transform duration-300 hover:shadow-[#100E36] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl hover:scale-105">
           <Image src={ImgReact} alt="React" width={200} height={200} />
         </div>
-        <div className="relative bg-white/80 rounded-3xl p-3 transition-transform duration-300 hover:shadow-violet-700 hover:shadow-2xl hover:scale-105">
+        <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-transform duration-300 hover:shadow-[#100E36] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl hover:scale-105">
           <Image src={ImgRedux} alt="Redux" width={200} height={200} />
         </div>
-        <div className="relative bg-white/80 rounded-3xl p-3 transition-transform duration-300 hover:shadow-violet-700 hover:shadow-2xl hover:scale-105">
+        <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-transform duration-300 hover:shadow-[#100E36] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl hover:scale-105">
           <Image src={ImgTailwind} alt="Tailwind" width={200} height={200} />
         </div>
-        <div className="relative bg-white/80 rounded-3xl p-3 transition-transform duration-300 hover:shadow-violet-700 hover:shadow-2xl hover:scale-105">
+        <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-transform duration-300 hover:shadow-[#100E36] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl hover:scale-105">
           <Image src={ImgExpress} alt="Express" width={200} height={200} />
         </div>
-        <div className="relative bg-white/80 rounded-3xl p-3 transition-transform duration-300 hover:shadow-violet-700 hover:shadow-2xl hover:scale-105">
+        <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-transform duration-300 hover:shadow-[#100E36] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl hover:scale-105">
           <Image src={ImgPosgres} alt="Posgres" width={200} height={200} />
         </div>
       </div>

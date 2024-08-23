@@ -28,12 +28,12 @@ function Card() {
 
   return (
     <div id="proyectos" className="mb-96 mt-20">
-      <h1 className="text-6xl font-bold text-center text-white hover:text-violet-700 hover:shadow-md hover:translate-x-1 transition duration-300">
+      <h1 className="text-6xl font-bold text-center text-[#402158] dark:text-[#E2E9FF] da hover:translate-x-1 transition duration-300">
         Mis Proyectos
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4 mt-10">
         {/* FitHub Card */}
-        <div className="card lg:card-side bg-base-100 shadow-xl w-full h-auto hover:shadow-violet-700 hover:shadow-2xl">
+        <div className="card lg:card-side shadow-xl bg-[#c9bfb5] dark:bg-[#402158] w-full h-auto hover:shadow-[#100E36] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl">
           <figure>
             <Image
               src={ImagenMF}
@@ -45,11 +45,15 @@ function Card() {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title text-2xl">FitHub</h2>
-            <p className="text-sm">Explora un poquito más sobre mi Proyecto</p>
+            <h2 className="card-title text-2xl text-[#402158] dark:text-[#E2E9FF]">
+              FitHub
+            </h2>
+            <p className="text-sm text-[#402158] dark:text-[#E2E9FF]">
+              Explora un poquito más sobre mi Proyecto
+            </p>
             <div className="card-actions justify-end">
               <button
-                className="btn btn-primary bg-violet-700 border-none"
+                className="m-4 text-xl relative z-[2] rounded-full border-2 text-[#e2E9ff] dark:text-[#140e36] border-[#C9bfb5] dark:border-[#7d5683] bg-[#7d5683] dark:bg-[#C9bfb5]  px-6 py-2 font-bold uppercase leading-normal transition duration-150 ease-in-out hover:bg-[#402158] dark:hover:bg-[#d0b69b]"
                 onClick={() => openModal("fithub")}
               >
                 Ver Más
@@ -59,7 +63,7 @@ function Card() {
         </div>
 
         {/* Apple Zone Card */}
-        <div className="card lg:card-side bg-base-100 shadow-xl w-full h-auto hover:shadow-violet-700 hover:shadow-2xl">
+        <div className="card lg:card-side shadow-xl bg-[#c9bfb5] dark:bg-[#402158] w-full h-auto hover:shadow-[#100E36] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl">
           <figure>
             <Image
               src={ImagenM4}
@@ -71,11 +75,15 @@ function Card() {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title text-2xl">Apple Zone</h2>
-            <p className="text-sm">Explora un poquito más sobre mi Proyecto</p>
+            <h2 className="card-title text-2xl text-[#402158] dark:text-[#E2E9FF] ">
+              Apple Zone
+            </h2>
+            <p className="text-sm text-[#402158] dark:text-[#E2E9FF]">
+              Explora un poquito más sobre mi Proyecto
+            </p>
             <div className="card-actions justify-end">
               <button
-                className="btn btn-primary bg-violet-700 border-none"
+                className="m-4 text-xl relative z-[2] rounded-full border-2 text-[#e2E9ff] dark:text-[#140e36] border-[#C9bfb5] dark:border-[#7d5683] bg-[#7d5683] dark:bg-[#C9bfb5]  px-6 py-2 font-bold uppercase leading-normal transition duration-150 ease-in-out hover:bg-[#402158] dark:hover:bg-[#d0b69b]"
                 onClick={() => openModal("applezone")}
               >
                 Ver Más
@@ -85,7 +93,7 @@ function Card() {
         </div>
 
         {/* Full Stack Gym Card */}
-        <div className="card lg:card-side bg-base-100 shadow-xl w-full h-auto hover:shadow-violet-700 hover:shadow-2xl">
+        <div className="card lg:card-side shadow-xl bg-[#c9bfb5] dark:bg-[#402158] w-full h-auto hover:shadow-[#100E36] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl">
           <figure>
             <Image
               src={ImagenM3}
@@ -97,11 +105,15 @@ function Card() {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title text-2xl">Full Stack Gym</h2>
-            <p className="text-sm">Explora un poquito más sobre mi Proyecto</p>
+            <h2 className="card-title text-2xl text-[#402158] dark:text-[#E2E9FF]">
+              Full Stack Gym
+            </h2>
+            <p className="text-sm text-[#402158] dark:text-[#E2E9FF]">
+              Explora un poquito más sobre mi Proyecto
+            </p>
             <div className="card-actions justify-end">
               <button
-                className="btn btn-primary bg-violet-700 border-none"
+                className="m-4 text-xl relative z-[2] rounded-full border-2 text-[#e2E9ff] dark:text-[#140e36] border-[#C9bfb5] dark:border-[#7d5683] bg-[#7d5683] dark:bg-[#C9bfb5]  px-6 py-2 font-bold uppercase leading-normal transition duration-150 ease-in-out hover:bg-[#402158] dark:hover:bg-[#d0b69b]"
                 onClick={() => openModal("fullstackgym")}
               >
                 Ver Más
@@ -119,14 +131,14 @@ function Card() {
           onClick={handleOutsideClick}
         >
           <div
-            className="daisy-modal-box bg-white p-6 sm:p-4 md:p-6 lg:p-8 rounded-lg shadow-lg w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/2 max-w-full max-h-full overflow-y-auto"
+            className="daisy-modal-box bg-[#c9bfb5]/90 dark:bg-[#402158]/90 p-4 rounded-lg shadow-lg w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/2 max-w-full max-h-full overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
-            <h3 className="text-5xl font-bold text-center text-black hover:text-violet-700 mb-5">
-              Full Stack Gym
+            <h3 className="text-3xl font-bold text-center text-[#402158] dark:text-[#c9bfb5] mb-5">
+              FitHub
             </h3>
             <div className="flex flex-col items-center w-full h-auto">
-              <Carousel className="opacity-90 w-full h-[35rem]">
+              <Carousel className="opacity-90 w-full h-[30rem]">
                 <Image
                   src="/Proyectos/mFa.png"
                   alt="..."
@@ -164,7 +176,7 @@ function Card() {
                 />
               </Carousel>
             </div>
-            <p className="py-4 text-black text-center text-xl mb-5">
+            <p className="py-4 text-[#402158] dark:text-[#c9bfb5] text-center text-lg mb-5">
               FitHub es una plataforma integral diseñada para fomentar un estilo
               de vida activo y saludable. A través de una combinación de
               funcionalidades y recursos, FitHub ofrece una experiencia completa
@@ -196,7 +208,7 @@ function Card() {
             </div>
             <div className="daisy-modal-action flex flex-row-reverse ">
               <button
-                className="btn btn-primary bg-violet-700 border-none text-xl"
+                className="m-4 text-xl relative z-[2] rounded-full border-2 text-[#e2E9ff] dark:text-[#140e36] border-[#C9bfb5] dark:border-[#7d5683] bg-[#7d5683] dark:bg-[#C9bfb5]  px-6 py-2 font-bold uppercase leading-normal transition duration-150 ease-in-out hover:bg-[#402158] dark:hover:bg-[#d0b69b]"
                 onClick={closeModal}
               >
                 Cerrar
@@ -206,7 +218,6 @@ function Card() {
         </div>
       )}
 
-      {/* Modal Apple Zone */}
       {openModalId === "applezone" && (
         <div
           className="fixed inset-0 flex items-center justify-center z-50"
@@ -214,14 +225,14 @@ function Card() {
           onClick={handleOutsideClick}
         >
           <div
-            className="daisy-modal-box bg-white p-6 sm:p-4 md:p-6 lg:p-8 rounded-lg shadow-lg w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/2 max-w-full max-h-full overflow-y-auto"
+            className="daisy-modal-box bg-[#c9bfb5]/90 dark:bg-[#402158]/90 p-4 rounded-lg shadow-lg w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/2 max-w-full max-h-full overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
-            <h3 className="text-5xl font-bold text-center text-black hover:text-violet-700 mb-5">
-              Full Stack Gym
+            <h3 className="text-5xl font-bold text-center text-[#402158] dark:text-[#c9bfb5] mb-5">
+              Apple Zone
             </h3>
             <div className="flex flex-col items-center w-full h-auto">
-              <Carousel className="opacity-90 w-full h-[35rem]">
+              <Carousel className="opacity-90 w-full h-[30rem]">
                 <Image
                   src="/Proyectos/m4.png"
                   alt="..."
@@ -259,7 +270,7 @@ function Card() {
                 />
               </Carousel>
             </div>
-            <p className="py-4 text-black text-center text-xl mb-5">
+            <p className="py-4 text-[#402158] dark:text-[#c9bfb5] text-center text-xl mb-5">
               Proyecto oriendo al desarrollo Front-End. Con herramientas y
               tecnicas que permitieron contruir una pagina web moderna, con gran
               rendimiento y eficiencia. La aplicación es un e-commerce con la
@@ -289,7 +300,7 @@ function Card() {
             </div>
             <div className="daisy-modal-action flex flex-row-reverse ">
               <button
-                className="btn btn-primary bg-violet-700 border-none text-xl"
+                className="m-4 text-xl relative z-[2] rounded-full border-2 text-[#e2E9ff] dark:text-[#140e36] border-[#C9bfb5] dark:border-[#7d5683] bg-[#7d5683] dark:bg-[#C9bfb5]  px-6 py-2 font-bold uppercase leading-normal transition duration-150 ease-in-out hover:bg-[#402158] dark:hover:bg-[#d0b69b]"
                 onClick={closeModal}
               >
                 Cerrar
@@ -299,7 +310,6 @@ function Card() {
         </div>
       )}
 
-      {/* Modal Full Stack Gym */}
       {openModalId === "fullstackgym" && (
         <div
           className="fixed inset-0 flex items-center justify-center z-50"
@@ -307,14 +317,14 @@ function Card() {
           onClick={handleOutsideClick}
         >
           <div
-            className="daisy-modal-box bg-white p-6 sm:p-4 md:p-6 lg:p-8 rounded-lg shadow-lg w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/2 max-w-full max-h-full overflow-y-auto"
+            className="daisy-modal-box bg-[#c9bfb5]/90 dark:bg-[#402158]/90 p-4 rounded-lg shadow-lg w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/2 max-w-full max-h-full overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
-            <h3 className="text-5xl font-bold text-center text-black hover:text-violet-700 mb-5">
+            <h3 className="text-5xl font-bold text-center text-[#402158] dark:text-[#c9bfb5] mb-5">
               Full Stack Gym
             </h3>
             <div className="flex flex-col items-center w-full h-auto">
-              <Carousel className="opacity-90 w-full h-[35rem]">
+              <Carousel className="opacity-90 w-full h-[30rem]">
                 <Image
                   src="/Proyectos/m3a.png"
                   alt="..."
@@ -352,7 +362,7 @@ function Card() {
                 />
               </Carousel>
             </div>
-            <p className="py-4 text-black text-center text-xl mb-5">
+            <p className="py-4 text-[#402158] dark:text-[#c9bfb5] text-center text-xl mb-5">
               En este proyecto he realizado una Single Page Aplication (SPA)
               para un registro de turnos de un gimnasio con fechas y horarios.
               Ademas de desarrollar el servidor HTTP para gestionar los turnos
@@ -379,7 +389,7 @@ function Card() {
             </div>
             <div className="daisy-modal-action flex flex-row-reverse ">
               <button
-                className="btn btn-primary bg-violet-700 border-none text-xl"
+                className="m-4 text-xl relative z-[2] rounded-full border-2 text-[#e2E9ff] dark:text-[#140e36] border-[#C9bfb5] dark:border-[#7d5683] bg-[#7d5683] dark:bg-[#C9bfb5]  px-6 py-2 font-bold uppercase leading-normal transition duration-150 ease-in-out hover:bg-[#402158] dark:hover:bg-[#d0b69b]"
                 onClick={closeModal}
               >
                 Cerrar

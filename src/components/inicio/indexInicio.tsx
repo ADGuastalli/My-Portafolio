@@ -2,31 +2,29 @@ import React from "react";
 import Image from "next/image";
 import Spline from "@splinetool/react-spline";
 import Link from "next/link";
+import ImagenMia from "../../../public/Imagen_de_WhatsApp_2024-08-22_a_las_15.13.37_528e0acb-removebg-previewwww.png";
+import style from "./style.module.css";
 function IndexInicio() {
   return (
-    <div id="inicio" className="mb-96 mt-20">
+    <div id="inicio" className="mb-96 mt-20 ">
       <div className="flex flex-col items-center">
-        <h1 className="mb-5 text-6xl font-bold text-center text-white hover:text-violet-700 hover:shadow-md hover:translate-x-1 transition duration-300">
-          Gracias por acercarte
-        </h1>
-        <Spline scene="https://prod.spline.design/Ipnnmy0yCG9emlUm/scene.splinecode" />
-        <h2 className="text-4xl font-bold text-center text-white hover:text-violet-700 hover:shadow-md hover:translate-x-1 transition duration-300">
+        <h2 className="text-4xl font-bold text-center text-[#402158] dark:text-[#E2E9FF] hover:text-[#726EFF] hover:shadow-md hover:translate-x-1 transition duration-300">
           ¡ Hola, soy Alexis Dante Guastalli !
         </h2>
-        <h3 className="text-white text-2xl m-2">
+        <h3 className="text-[#402158] dark:text-[#E2E9FF] text-2xl m-2">
           Desarrollador Full Stack | Front-end
         </h3>
       </div>
       <div className="flex items-center m-5">
         <Image
-          className="rounded-full "
-          src="/Sintítulo.png"
+          className={style.Image}
+          src={ImagenMia}
           alt="Flowbite Logo"
           width={800}
           height={800}
         />
         <div>
-          <p className="text-white text-2xl p-10 text-center">
+          <p className="text-[#402158] dark:text-[#E2E9FF] text-2xl p-10 text-center">
             Soy Desarrolador web Full Stack con horientacion en Frontend,
             utilizando tecnologias como React, Next.js, JavaScript, TypeScript,
             CSS, SCSS, Tailwind, Bootstrap, y más. Ademas soy Testing QA Manual.
@@ -35,7 +33,7 @@ function IndexInicio() {
             tecnologías y herramientas para seguir aprendiendo y mejorando.
           </p>
 
-          <p className="text-white text-2xl p-10 text-center">
+          <p className="text-[#402158] dark:text-[#E2E9FF] text-2xl p-10 text-center">
             Ademas soy un Profesor de Educación Física con más de una década de
             experiencia en el ámbito educativo y deportivo. Mi trayectoria
             incluye roles en instituciones educativas públicas y privadas, así
@@ -44,8 +42,11 @@ function IndexInicio() {
           </p>
         </div>
       </div>
+      <div className="flex flex-col items-center h-96 w-96">
+        <Spline scene="https://prod.spline.design/Ipnnmy0yCG9emlUm/scene.splinecode" />
+      </div>
       <Link href="https://docs.google.com/document/d/1NzKnW68FvUZbR2X27A05MP1xOlZ8643fgz_gEpaQzsI/edit?usp=sharing">
-        <button className="btn btn-primary bg-violet-700 border-none text-3xl">
+        <button className="m-4 text-xl relative z-[2] rounded-full border-2 text-[#e2E9ff] dark:text-[#140e36] border-[#C9bfb5] dark:border-[#7d5683] bg-[#7d5683] dark:bg-[#C9bfb5]  px-6 py-2 font-bold uppercase leading-normal transition duration-150 ease-in-out hover:bg-[#402158] dark:hover:bg-[#d0b69b]  ">
           Curriculum CV
         </button>
       </Link>
