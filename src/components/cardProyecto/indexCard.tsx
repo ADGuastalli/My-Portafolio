@@ -27,7 +27,7 @@ function Card() {
   };
 
   return (
-    <div id="proyectos" className="mb-96 mt-20">
+    <div id="proyectos" className="mb-96 mt-5">
       <h1 className="text-6xl font-bold text-center text-[#402158] dark:text-[#E2E9FF] da hover:translate-x-1 transition duration-300">
         Mis Proyectos
       </h1>

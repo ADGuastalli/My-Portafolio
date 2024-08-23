@@ -6,7 +6,7 @@ import ImagenMia from "../../../public/Imagen_de_WhatsApp_2024-08-22_a_las_15.13
 import style from "./style.module.css";
 function IndexInicio() {
   return (
-    <div id="inicio" className="mb-96 mt-20 ">
+    <div id="inicio" className="mb-96 mt-5 ">
       <div className="flex flex-col items-center">
         <h2 className="text-6xl font-bold text-center text-[#402158] dark:text-[#E2E9FF] hover:translate-x-1 transition duration-300">
           ¡ Hola, soy Alexis Dante Guastalli !
@@ -23,11 +23,11 @@ function IndexInicio() {
           className={style.Image}
           src={ImagenMia}
           alt="Mi Foto"
-          width={800}
-          height={800}
+          width={1200}
+          height={1200}
         />
         <div>
-          <p className="text-[#402158] dark:text-[#E2E9FF] text-lg mb-5 text-center">
+          <p className="text-[#402158] dark:text-[#E2E9FF] text-2xl mb-5 text-center">
             Soy Desarrolador web Full Stack con horientacion en Frontend,
             utilizando tecnologias como React, Next.js, JavaScript, TypeScript,
             CSS, SCSS, Tailwind, Bootstrap, y más. Ademas soy Testing QA Manual.
@@ -36,7 +36,7 @@ function IndexInicio() {
             tecnologías y herramientas para seguir aprendiendo y mejorando.
           </p>
 
-          <p className="text-[#402158] dark:text-[#E2E9FF] text-lg text-center">
+          <p className="text-[#402158] dark:text-[#E2E9FF] text-2xl text-center">
             Ademas soy un Profesor de Educación Física con más de una década de
             experiencia en el ámbito educativo y deportivo. Mi trayectoria
             incluye roles en instituciones educativas públicas y privadas, así
@@ -51,7 +51,7 @@ function IndexInicio() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <button className="m-4 text-xl relative z-[2] rounded-full border-2 text-[#e2E9ff] dark:text-[#140e36] border-[#C9bfb5] dark:border-[#7d5683] bg-[#7d5683] dark:bg-[#C9bfb5]  px-6 py-2 font-bold uppercase leading-normal transition duration-150 ease-in-out hover:bg-[#402158] dark:hover:bg-[#d0b69b]  ">
+        <button className="mt-20 text-xl relative z-[2] rounded-full border-2 text-[#e2E9ff] dark:text-[#140e36] border-[#C9bfb5] dark:border-[#7d5683] bg-[#7d5683] dark:bg-[#C9bfb5]  px-6 py-2 font-bold uppercase leading-normal transition duration-150 ease-in-out hover:bg-[#402158] dark:hover:bg-[#d0b69b]  ">
           Curriculum CV
         </button>
       </Link>

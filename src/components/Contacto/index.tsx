@@ -4,7 +4,7 @@ import { IndexUbicacion } from "./ubicacion";
 
 export function IndexContacto() {
   return (
-    <div id="contacto" className="my-20">
+    <div id="contacto" className="my-5">
       <h1 className="text-6xl font-bold text-center text-[#402158] dark:text-[#E2E9FF]  hover:translate-x-1 transition duration-300 md:text-5xl lg:text-6xl xl:text-7xl">
         Contacto
       </h1>
