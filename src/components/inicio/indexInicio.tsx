@@ -45,16 +45,6 @@ function IndexInicio() {
           </p>
         </div>
       </div>
-
-      <Link
-        href="https://docs.google.com/document/d/1NzKnW68FvUZbR2X27A05MP1xOlZ8643fgz_gEpaQzsI/edit?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <button className="mt-20 text-xl relative z-[2] rounded-full border-2 text-[#e2E9ff] dark:text-[#140e36] border-[#C9bfb5] dark:border-[#7d5683] bg-[#7d5683] dark:bg-[#C9bfb5]  px-6 py-2 font-bold uppercase leading-normal transition duration-150 ease-in-out hover:bg-[#402158] dark:hover:bg-[#d0b69b]  ">
-          Curriculum CV
-        </button>
-      </Link>
     </div>
   );
 }

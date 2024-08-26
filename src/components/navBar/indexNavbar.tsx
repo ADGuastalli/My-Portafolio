@@ -4,6 +4,7 @@ import Image from "next/image";
 import ImgSol from "../../../public/svg/sun-svgrepo-com.svg";
 import ImgLun from "../../../public/svg/moon-svgrepo-com.svg";
 import Link from "next/link";
+import IndexChat from "../chatBot/indexChat";
 
 function IndexNavbar() {
   const [theme, setTheme] = React.useState("light");
@@ -95,6 +96,7 @@ function IndexNavbar() {
               </button>
             </Link>
           </div>
+          <IndexChat />
           <div>
             <a onClick={handleChangeTheme} className="cursor-pointer">
               <Image
