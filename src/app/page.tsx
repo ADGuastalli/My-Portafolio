@@ -4,6 +4,7 @@ import styles from "./style/style.module.css";
 import Card from "@/components/cardProyecto/indexCard";
 import { MisTec } from "@/components/MisTec";
 import { IndexContacto } from "@/components/Contacto";
+import { IndexEstudios } from "@/components/estudios/indexEstudios";
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
       </div>
       <div id="proyectos">
         <Card />
+      </div>
+      <div id="estudios" className="mt-10">
+        <IndexEstudios />
       </div>
       <div id="tecnologias" className="mt-10">
         <MisTec />

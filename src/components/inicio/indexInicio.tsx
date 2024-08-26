@@ -30,10 +30,10 @@ function IndexInicio() {
           <p className="text-[#402158] dark:text-[#E2E9FF] text-2xl mb-5 text-center">
             Soy Desarrolador web Full Stack con horientacion en Frontend,
             utilizando tecnologias como React, Next.js, JavaScript, TypeScript,
-            CSS, SCSS, Tailwind, Bootstrap, y más. Ademas soy Testing QA Manual.
-            Me encanta desarrollar soluciones creativas, eficientes y
-            visualmente atractivas, y siempre estoy en busca de nuevas
-            tecnologías y herramientas para seguir aprendiendo y mejorando.
+            CSS, Tailwind, Bootstrap, y más. Ademas soy Testing QA Manual. Me
+            encanta desarrollar soluciones creativas, eficientes y visualmente
+            atractivas, y siempre estoy en busca de nuevas tecnologías y
+            herramientas para seguir aprendiendo y mejorando.
           </p>
 
           <p className="text-[#402158] dark:text-[#E2E9FF] text-2xl text-center">
