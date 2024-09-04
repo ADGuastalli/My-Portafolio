@@ -87,7 +87,7 @@ function IndexNavbar() {
               </li>
             </ul>
             <Link
-              href="https://docs.google.com/document/d/1NzKnW68FvUZbR2X27A05MP1xOlZ8643fgz_gEpaQzsI/edit?usp=sharing"
+              href="https://drive.google.com/file/d/1psLuBKFZOg5QxF_H1ogPlW2WBV6SHskF/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >

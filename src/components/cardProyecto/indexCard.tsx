@@ -182,9 +182,9 @@ function Card() {
               funcionalidades y recursos, FitHub ofrece una experiencia completa
               para los entusiastas del fitness y aquellos que buscan mejorar su
               bienestar. FitHub se construyó utilizando tecnologías avanzadas,
-              como React, Next.js, Tailwind CSS, MercadoPago, Auth0, NodeMailer
-              y TypeScript. Esto garantiza una experiencia de usuario fluida y
-              segura.
+              como React, Next.js, Tailwind CSS, MercadoPago, Google Maps,
+              Auth0, NodeMailer y TypeScript. Esto garantiza una experiencia de
+              usuario fluida y segura.
             </p>
             <div className="flex flex-row justify-evenly">
               <Link href="https://github.com/ADGuastalli/FitHub-FinalHenry">

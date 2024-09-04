@@ -15,7 +15,7 @@ export default function IndexChat() {
           },
           {
             id: "2",
-            message: "En que te puedo ayudar?",
+            message: "En que te puedo ayudarte?",
             trigger: "3",
           },
           {
