@@ -19,7 +19,7 @@ export function MisTec() {
         Mis Habilidades
       </h1>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-10 mt-5">
-        <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
+        <div className="relative bg-[#e2ddd8] dark:bg-[#d9c5ff] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
           <Image
             src={ImgHtml}
             alt="Html"
@@ -32,7 +32,7 @@ export function MisTec() {
           </p>
         </div>
 
-        <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
+        <div className="relative bg-[#e2ddd8] dark:bg-[#d9c5ff] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
           <Image
             src={ImgCss}
             alt="CSS"
@@ -45,7 +45,7 @@ export function MisTec() {
           </p>
         </div>
 
-        <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
+        <div className="relative bg-[#e2ddd8] dark:bg-[#d9c5ff] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
           <Image
             src={ImgType}
             alt="TypeScript"
@@ -58,7 +58,7 @@ export function MisTec() {
           </p>
         </div>
 
-        <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
+        <div className="relative bg-[#e2ddd8] dark:bg-[#d9c5ff] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
           <Image
             src={ImgJavascript}
             alt="JavaScript"
@@ -71,7 +71,7 @@ export function MisTec() {
           </p>
         </div>
 
-        <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
+        <div className="relative bg-[#e2ddd8] dark:bg-[#d9c5ff] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
           <Image
             src={ImgNext}
             alt="Next"
@@ -84,7 +84,7 @@ export function MisTec() {
           </p>
         </div>
 
-        <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
+        <div className="relative bg-[#e2ddd8] dark:bg-[#d9c5ff] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
           <Image
             src={ImgNode}
             alt="Node"
@@ -97,7 +97,7 @@ export function MisTec() {
           </p>
         </div>
 
-        <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
+        <div className="relative bg-[#e2ddd8] dark:bg-[#d9c5ff] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
           <Image
             src={ImgReact}
             alt="React"
@@ -110,7 +110,7 @@ export function MisTec() {
           </p>
         </div>
 
-        <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
+        <div className="relative bg-[#e2ddd8] dark:bg-[#d9c5ff] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
           <Image
             src={ImgTailwind}
             alt="Tailwind"
@@ -123,7 +123,7 @@ export function MisTec() {
           </p>
         </div>
 
-        <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
+        <div className="relative bg-[#e2ddd8] dark:bg-[#d9c5ff] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
           <Image
             src={ImgExpress}
             alt="Express"
@@ -136,7 +136,7 @@ export function MisTec() {
           </p>
         </div>
 
-        <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
+        <div className="relative bg-[#e2ddd8] dark:bg-[#d9c5ff] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
           <Image
             src={ImgPosgres}
             alt="Postgres"
@@ -155,7 +155,7 @@ export function MisTec() {
       <div className="flex justify-center">
         <div className="grid grid-cols-2 gap-10 mt-5">
           {/* React Native */}
-          <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
+          <div className="relative bg-[#e2ddd8] dark:bg-[#d9c5ff] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
             <Image
               src={ImgReact}
               alt="React"
@@ -169,7 +169,7 @@ export function MisTec() {
           </div>
 
           {/* Python */}
-          <div className="relative bg-[#e2ddd8] dark:bg-[#b17fb8] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
+          <div className="relative bg-[#e2ddd8] dark:bg-[#d9c5ff] rounded-3xl p-3 transition-shadow duration-300 hover:shadow-[#4a487d] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl group">
             <Image
               src={ImgPyt}
               alt="Python"

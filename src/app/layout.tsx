@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Kanit } from "next/font/google";
 import "./globals.css";
 import IndexNavbar from "@/components/navBar/indexNavbar";
 import Footer from "@/components/footer/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Kanit( { weight:'400' ,subsets: ["latin"] } );
 
 export const metadata: Metadata = {
   title: "Portfolio Guastalli Alexis",
@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <IndexNavbar />
-        <main className="bg-[#E2E9FF] dark:bg-[#140E36] pl-64 flex-1 p-8">
+        <main className="bg-[#E2E9FF] dark:bg-[#140E36] pl-64 flex-1">
           {children}
         </main>
         <Footer />

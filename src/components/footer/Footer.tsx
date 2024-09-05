@@ -18,7 +18,7 @@ const Footer = () => {
                 />
               </div>
               <span className="self-center text-2xl font-semibold whitespace-nowrap text-[#402158] dark:text-[#E2E9FF]">
-                My Portafolio
+                Mi Portafolio
               </span>
             </a>
           </div>

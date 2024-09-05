@@ -8,20 +8,32 @@ import { IndexEstudios } from "@/components/estudios/indexEstudios";
 
 export default function Home() {
   return (
-    <div className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
+    <div className="flex flex-wrap items-center justify-center">
       <div id="inicio" className={styles.Home}>
         <IndexInicio />
       </div>
-      <div id="proyectos">
+      <div
+        id="proyectos"
+        className="mt-10 bg-gradient-to-t from-transparent to-[#ecf1ff] dark:to-[#2b2358] px-40 w-full"
+      >
         <Card />
       </div>
-      <div id="estudios" className="mt-10">
+      <div
+        id="estudios"
+        className="mt-10 bg-gradient-to-t from-transparent to-[#ecf1ff] dark:to-[#2b2358] px-40 w-full"
+      >
         <IndexEstudios />
       </div>
-      <div id="tecnologias" className="mt-10">
+      <div
+        id="tecnologias"
+        className="mt-10 bg-gradient-to-t from-transparent to-[#ecf1ff] dark:to-[#2b2358] px-40 w-full"
+      >
         <MisTec />
       </div>
-      <div id="contacto" className="mt-10">
+      <div
+        id="contacto"
+        className="mt-10 bg-gradient-to-t from-transparent to-[#ecf1ff] dark:to-[#2b2358] px-40 w-full"
+      >
         <IndexContacto />
       </div>
     </div>
