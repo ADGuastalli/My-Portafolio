@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import ImgSol from "../../../public/svg/sun-svgrepo-com.svg";
 import ImgLun from "../../../public/svg/moon-svgrepo-com.svg";
@@ -7,24 +7,64 @@ import Link from "next/link";
 import IndexChat from "../chatBot/indexChat";
 
 function IndexNavbar() {
-  const [theme, setTheme] = React.useState("light");
+  const [theme, setTheme] = useState("light");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    if (theme === "dark") {
-      document.querySelector("html")?.classList.add("dark");
-    } else {
-      document.querySelector("html")?.classList.remove("dark");
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) {
+      setTheme(storedTheme);
+      document
+        .querySelector("html")
+        ?.classList.toggle("dark", storedTheme === "dark");
     }
+  }, []);
+
+  useEffect(() => {
+    document.querySelector("html")?.classList.toggle("dark", theme === "dark");
+    localStorage.setItem("theme", theme);
   }, [theme]);
 
   const handleChangeTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
+  };
+
   return (
     <div>
-      <nav className="fixed top-0 left-0 h-full w-64 bg-[#C9BFB5] border-r border-[#7D5683] dark:bg-[#402158] z-50">
-        <div className="flex flex-col h-full justify-between p-4">
+      <nav className="relative md:fixed top-0 left-0 w-full h-full md:w-64 bg-[#C9BFB5] border-r border-[#7D5683] dark:bg-[#402158] z-50">
+        {/* Navbar visible on small screens */}
+        <div className="flex justify-between items-center p-4 md:hidden">
+          <span className="text-[#402158] font-bold text-2xl dark:text-[#E2E9FF]">
+            Mi Portafolio
+          </span>
+          <button onClick={toggleMenu} className="cursor-pointer">
+            <svg
+              className="w-6 h-6 text-[#402158] dark:text-[#E2E9FF]"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+        </div>
+
+        {/* Menu for larger screens or when menu is open */}
+        <div
+          className={`${
+            isMenuOpen ? "block" : "hidden"
+          } md:block flex flex-col h-full justify-between p-4`}
+        >
           <div>
             <a
               href="https://www.linkedin.com/in/alexis-guastalli/"
@@ -96,20 +136,24 @@ function IndexNavbar() {
               </button>
             </Link>
           </div>
-          <IndexChat />
-          <div>
-            <a onClick={handleChangeTheme} className="cursor-pointer">
+          <div className="relative mt-5 md:absolute md:bottom-4 md:left-4">
+            <button onClick={handleChangeTheme} className="cursor-pointer">
               <Image
                 src={theme === "light" ? ImgLun : ImgSol}
-                alt="..."
+                alt="Change Theme"
                 width={50}
                 height={50}
                 className="object-cover"
               />
-            </a>
+            </button>
           </div>
         </div>
       </nav>
+
+      {/* Always visible Chatbot */}
+      <div className="fixed bottom-0 left-0 mb-4 ml-4 z-50">
+        <IndexChat />
+      </div>
     </div>
   );
 }
