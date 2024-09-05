@@ -6,18 +6,50 @@ import ImgLun from "../../../public/svg/moon-svgrepo-com.svg";
 import Link from "next/link";
 import IndexChat from "../chatBot/indexChat";
 
-function IndexNavbar() {
+const NavButton: React.FC<{
+  onClick: () => void;
+  icon: any;
+  alt: string;
+}> = ({ onClick, icon, alt }) => (
+  <button onClick={onClick} className="cursor-pointer">
+    <Image
+      src={icon}
+      alt={alt}
+      width={50}
+      height={50}
+      className="object-cover"
+    />
+  </button>
+);
+
+const MenuItem: React.FC<{
+  href: string;
+  text: string;
+  isActive?: boolean;
+}> = ({ href, text, isActive }) => (
+  <li>
+    <a
+      href={href}
+      className={`block py-2 px-3 text-xl font-bold rounded transition-transform duration-300 transform hover:scale-110 hover:text-violet-700 dark:text-[#E2E9FF] dark:hover:bg-gray-700 dark:hover:text-white ${
+        isActive ? "text-violet-700" : "text-[#402158]"
+      }`}
+      aria-current={isActive ? "page" : undefined}
+    >
+      {text}
+    </a>
+  </li>
+);
+
+export function IndexNavbar() {
   const [theme, setTheme] = useState("light");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    const storedTheme = localStorage.getItem("theme");
-    if (storedTheme) {
-      setTheme(storedTheme);
-      document
-        .querySelector("html")
-        ?.classList.toggle("dark", storedTheme === "dark");
-    }
+    const storedTheme = localStorage.getItem("theme") || "light";
+    setTheme(storedTheme);
+    document
+      .querySelector("html")
+      ?.classList.toggle("dark", storedTheme === "dark");
   }, []);
 
   useEffect(() => {
@@ -29,9 +61,7 @@ function IndexNavbar() {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
 
-  const toggleMenu = () => {
-    setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
-  };
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   return (
     <div>
@@ -73,79 +103,46 @@ function IndexNavbar() {
               <div className="relative object-contain w-10 h-10 mr-2">
                 <Image
                   src="/svg/iconCode.svg"
-                  className="h-8 me-3"
-                  alt="FlowBite Logo"
+                  alt="Logo"
                   fill={true}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
-              <span className="text-[#402158] font-bold self-center text-2xl whitespace-nowrap transition-transform duration-300 hover:scale-110 hover:text-violet-700 dark:text-[#E2E9FF]">
+              <span className="text-[#402158] font-bold text-2xl whitespace-nowrap transition-transform duration-300 hover:scale-110 hover:text-violet-700 dark:text-[#E2E9FF]">
                 Mi Portafolio
               </span>
             </a>
             <ul className="font-medium flex flex-col items-start space-y-4">
-              <li>
-                <a
-                  href="#inicio"
-                  className="block py-2 px-3 text-xl text-[#402158] font-bold rounded transition-transform duration-300 transform hover:scale-110 hover:text-violet-700  dark:text-[#E2E9FF]  dark:hover:bg-gray-700 dark:hover:text-white"
-                  aria-current="page"
-                >
-                  Sobre Mi
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#proyectos"
-                  className="block py-2 px-3 text-xl text-[#402158] font-bold rounded transition-transform duration-300 transform hover:scale-110 hover:text-violet-700  dark:text-[#E2E9FF] dark:hover:bg-gray-700 dark:hover:text-white"
-                >
-                  Mis Proyectos
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#estudios"
-                  className="block py-2 px-3 text-xl text-[#402158] font-bold rounded transition-transform duration-300 transform hover:scale-110 hover:text-violet-700  dark:text-[#E2E9FF] dark:hover:bg-gray-700 dark:hover:text-white"
-                >
-                  Mis Estudios
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#tecnologias"
-                  className="block py-2 px-3 text-xl text-[#402158] font-bold rounded transition-transform duration-300 transform hover:scale-110 hover:text-violet-700  dark:text-[#E2E9FF] dark:hover:bg-gray-700 dark:hover:text-white"
-                >
-                  Mis Habilidades
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contacto"
-                  className="block py-2 px-3 text-xl text-[#402158] font-bold rounded transition-transform duration-300 transform hover:scale-110 hover:text-violet-700  dark:text-[#E2E9FF] dark:hover:bg-gray-700 dark:hover:text-white"
-                >
-                  Mis Contacto
-                </a>
-              </li>
+              <MenuItem href="#inicio" text="Sobre Mi" isActive={false} />
+              <MenuItem
+                href="#proyectos"
+                text="Mis Proyectos"
+                isActive={false}
+              />
+              <MenuItem href="#estudios" text="Mis Estudios" isActive={false} />
+              <MenuItem
+                href="#tecnologias"
+                text="Mis Habilidades"
+                isActive={false}
+              />
+              <MenuItem href="#contacto" text="Mis Contacto" isActive={false} />
             </ul>
             <Link
               href="https://drive.google.com/file/d/1psLuBKFZOg5QxF_H1ogPlW2WBV6SHskF/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="mt-10 text-xl relative z-[2] rounded-full border-2 text-[#e2E9ff] dark:text-[#140e36] border-[#C9bfb5] dark:border-[#7d5683] bg-[#7d5683] dark:bg-[#C9bfb5]  px-6 py-2 font-bold uppercase leading-normal transition duration-150 ease-in-out hover:bg-[#402158] dark:hover:bg-[#d0b69b]  ">
+              <button className="mt-10 text-xl rounded-full border-2 text-[#e2E9ff] dark:text-[#140e36] border-[#C9bfb5] dark:border-[#7d5683] bg-[#7d5683] dark:bg-[#C9bfb5] px-6 py-2 font-bold uppercase leading-normal transition duration-150 ease-in-out hover:bg-[#402158] dark:hover:bg-[#d0b69b]">
                 Curriculum CV
               </button>
             </Link>
           </div>
           <div className="relative mt-5 md:absolute md:bottom-4 md:left-4">
-            <button onClick={handleChangeTheme} className="cursor-pointer">
-              <Image
-                src={theme === "light" ? ImgLun : ImgSol}
-                alt="Change Theme"
-                width={50}
-                height={50}
-                className="object-cover"
-              />
-            </button>
+            <NavButton
+              onClick={handleChangeTheme}
+              icon={theme === "light" ? ImgLun : ImgSol}
+              alt="Change Theme"
+            />
           </div>
         </div>
       </nav>
