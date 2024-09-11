@@ -6,9 +6,8 @@ export default function Robots() {
       {
         userAgent: "*",
         allow: "/",
-        disallow: "/dashboad",
       },
     ],
-    sitemap: Sitemap(),
+    sitemap: "https://porfolio-guastalli-alexis.vercel.app/sitemap.ts",
   };
 }
