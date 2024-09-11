@@ -4,7 +4,7 @@ export default function Robots() {
   return {
     rules: [
       {
-        userAgent: "Googlebot",
+        userAgent: "*",
         allow: "/",
         disallow: "/dashboad",
       },
