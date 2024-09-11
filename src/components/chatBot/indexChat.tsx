@@ -3,6 +3,13 @@ import React from "react";
 import ChatBot from "react-simple-chatbot";
 
 export default function IndexChat() {
+  const handleScrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <ChatBot
@@ -44,12 +51,12 @@ export default function IndexChat() {
             id: "4",
             component: (
               <div>
-                <a
-                  href="#proyectos"
-                  className="block py-2 px-3 text-xl text-[#402158] font-bold rounded transition-transform duration-300 transform hover:scale-110 hover:text-violet-700  dark:text-[#E2E9FF] dark:hover:bg-gray-700 dark:hover:text-white"
+                <button
+                  onClick={() => handleScrollToSection("proyectos")}
+                  className="block py-2 px-3 text-xl text-[#402158] font-bold rounded transition-transform duration-300 transform hover:scale-110 hover:text-violet-700 dark:text-[#E2E9FF] dark:hover:bg-gray-700 dark:hover:text-white"
                 >
                   Ir a Mis Proyectos
-                </a>
+                </button>
               </div>
             ),
             trigger: "8",
@@ -58,12 +65,12 @@ export default function IndexChat() {
             id: "5",
             component: (
               <div>
-                <a
-                  href="#estudios"
-                  className="block py-2 px-3 text-xl text-[#402158] font-bold rounded transition-transform duration-300 transform hover:scale-110 hover:text-violet-700  dark:text-[#E2E9FF] dark:hover:bg-gray-700 dark:hover:text-white"
+                <button
+                  onClick={() => handleScrollToSection("estudios")}
+                  className="block py-2 px-3 text-xl text-[#402158] font-bold rounded transition-transform duration-300 transform hover:scale-110 hover:text-violet-700 dark:text-[#E2E9FF] dark:hover:bg-gray-700 dark:hover:text-white"
                 >
-                  Ia a Mis Estudios
-                </a>
+                  Ir a Mis Estudios
+                </button>
               </div>
             ),
             trigger: "8",
@@ -72,12 +79,12 @@ export default function IndexChat() {
             id: "6",
             component: (
               <div>
-                <a
-                  href="#tecnologias"
-                  className="block py-2 px-3 text-xl text-[#402158] font-bold rounded transition-transform duration-300 transform hover:scale-110 hover:text-violet-700  dark:text-[#E2E9FF] dark:hover:bg-gray-700 dark:hover:text-white"
+                <button
+                  onClick={() => handleScrollToSection("tecnologias")}
+                  className="block py-2 px-3 text-xl text-[#402158] font-bold rounded transition-transform duration-300 transform hover:scale-110 hover:text-violet-700 dark:text-[#E2E9FF] dark:hover:bg-gray-700 dark:hover:text-white"
                 >
                   Ir a Mis Habilidades
-                </a>
+                </button>
               </div>
             ),
             trigger: "8",
@@ -86,12 +93,12 @@ export default function IndexChat() {
             id: "7",
             component: (
               <div>
-                <a
-                  href="#contacto"
-                  className="block py-2 px-3 text-xl text-[#402158] font-bold rounded transition-transform duration-300 transform hover:scale-110 hover:text-violet-700  dark:text-[#E2E9FF] dark:hover:bg-gray-700 dark:hover:text-white"
+                <button
+                  onClick={() => handleScrollToSection("contacto")}
+                  className="block py-2 px-3 text-xl text-[#402158] font-bold rounded transition-transform duration-300 transform hover:scale-110 hover:text-violet-700 dark:text-[#E2E9FF] dark:hover:bg-gray-700 dark:hover:text-white"
                 >
                   Ir a Mis Contactos
-                </a>
+                </button>
               </div>
             ),
             trigger: "8",
@@ -102,7 +109,7 @@ export default function IndexChat() {
               <div>
                 <a
                   href="https://drive.google.com/file/d/1psLuBKFZOg5QxF_H1ogPlW2WBV6SHskF/view?usp=sharing"
-                  className="block py-2 px-3 text-xl text-[#402158] font-bold rounded transition-transform duration-300 transform hover:scale-110 hover:text-violet-700  dark:text-[#E2E9FF] dark:hover:bg-gray-700 dark:hover:text-white"
+                  className="block py-2 px-3 text-xl text-[#402158] font-bold rounded transition-transform duration-300 transform hover:scale-110 hover:text-violet-700 dark:text-[#E2E9FF] dark:hover:bg-gray-700 dark:hover:text-white"
                 >
                   Ver mi CV
                 </a>
