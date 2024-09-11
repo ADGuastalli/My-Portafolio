@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://porfolio-guastalli-alexis.vercel.app
+
+# Sitemaps
+Sitemap: https://porfolio-guastalli-alexis.vercel.app/sitemap.xml

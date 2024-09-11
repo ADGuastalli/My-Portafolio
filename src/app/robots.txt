@@ -1,5 +1,0 @@
-user-agent: *
-allow: /
-disallow /dashboard
-
-sitemap: https://porfolio-guastalli-alexis.vercel.apps/sitemap.ts

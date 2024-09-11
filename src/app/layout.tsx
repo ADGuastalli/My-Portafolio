@@ -9,11 +9,15 @@ const inter = Kanit({ weight: '400', subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Portfolio Guastalli Alexis",
   description: "My Portfolio by Guastalli Alexis Dante",
-  viewport: "width=device-width, initial-scale=1.0",
   keywords: "portfolio, Guastalli Alexis, full stack developer, web developer",
   robots: "index, follow",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+  maximumScale: 1.0,
+}
 export default function RootLayout({
   children,
 }: Readonly<{

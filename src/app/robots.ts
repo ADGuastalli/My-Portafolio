@@ -1,5 +1,3 @@
-import Sitemap from "./sitemap";
-
 export default function Robots() {
   return {
     rules: [
@@ -8,6 +6,6 @@ export default function Robots() {
         allow: "/",
       },
     ],
-    sitemap: "https://porfolio-guastalli-alexis.vercel.app/sitemap.ts",
+    sitemap: "https://porfolio-guastalli-alexis.vercel.app/sitemap.xml",
   };
 }
