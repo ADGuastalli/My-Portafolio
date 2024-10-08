@@ -16,6 +16,20 @@ interface ModalContent {
 }
 
 const modals: { [key: string]: ModalContent } = {
+  cashIn: {
+    title: "CashIn Bot",
+    images: [
+      "/Proyectos/c1.png",
+      "/Proyectos/c2.png",
+      "/Proyectos/c3.png",
+      "/Proyectos/c4.png",
+      "/Proyectos/c5.png",
+    ],
+    description:
+      "CashIn es una aplicación de diagnóstico financiero personalizado permite a los usuarios subir sus datos financieros para recibir un análisis detallado y recomendaciones personalizadas en tiempo real. Desarrollada utilizando un stack tecnológico moderno, la plataforma combina interfaces web responsivas con potentes algoritmos de aprendizaje automático y procesamiento de lenguaje natural para ofrecer una experiencia intuitiva y eficaz.",
+    githubLink: "https://github.com/ADGuastalli/CashIn-Bot",
+    liveLink: "https://test.cashinbot.com/",
+  },
   fithub: {
     title: "FitHub",
     images: [
