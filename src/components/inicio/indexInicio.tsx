@@ -22,7 +22,7 @@ function IndexInicio() {
         <h3
           className={`${textBaseClass} text-lg sm:text-xl md:text-2xl lg:text-3xl m-2`}
         >
-          Desarrollador Full Stack | Front-end | QA Manual
+          Desarrollador Web Full Stack | Front-end | QA Manual
         </h3>
         <div className="flex flex-col items-center mx-auto h-40 w-40">
           <Spline scene="https://prod.spline.design/Ipnnmy0yCG9emlUm/scene.splinecode" />

@@ -177,11 +177,11 @@ function Card() {
       <h1 className="text-6xl font-bold text-center text-[#402158] dark:text-[#E2E9FF] da hover:translate-x-1 transition duration-300">
         Mis Proyectos
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-10">
         {Object.keys(modals).map((key) => (
           <motion.div
             key={key}
-            className="card lg:card-side shadow-xl bg-[#c9bfb5] dark:bg-[#402158] w-full h-auto hover:shadow-[#100E36] dark:hover:shadow-[#e2e9ff] hover:shadow-2xl"
+            className="card lg:card-side bg-[#c9bfb5] dark:bg-[#402158] w-full h-auto hover:shadow-[#100E36] dark:hover:shadow-[#e2e9ff] hover:shadow-lg"
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
@@ -206,7 +206,7 @@ function Card() {
               </p>
               <div className="card-actions justify-end">
                 <button
-                  className="m-4 text-xl relative z-[2] rounded-full border-2 text-[#e2E9ff] dark:text-[#140e36] border-[#C9bfb5] dark:border-[#7d5683] bg-[#7d5683] dark:bg-[#C9bfb5] px-6 py-2 font-bold uppercase leading-normal transition duration-150 ease-in-out hover:bg-[#402158] dark:hover:bg-[#d0b69b]"
+                  className="m-4 w-28 text-sm relative z-[2] rounded-xl border-2 text-[#e2E9ff] dark:text-[#140e36] border-[#C9bfb5] dark:border-[#7d5683] bg-[#7d5683] dark:bg-[#C9bfb5] px-6 py-2 font-bold uppercase leading-normal transition duration-150 ease-in-out hover:bg-[#402158] dark:hover:bg-[#d0b69b]"
                   onClick={() => openModal(key)}
                 >
                   Ver Más
