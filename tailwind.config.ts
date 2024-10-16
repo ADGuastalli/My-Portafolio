@@ -11,7 +11,17 @@ const config: Config = {
     flowbite.content(),
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        scroll: 'scroll 80s linear infinite',
+      },
+      keyframes: {
+        scroll: {
+          '-10%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
+    },
   },
   plugins: [
     flowbite.plugin(),
@@ -19,4 +29,5 @@ const config: Config = {
     require("daisyui"),
   ],
 };
+
 export default config;

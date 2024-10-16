@@ -2,3 +2,24 @@
   mask-image: linear-gradient(black 80%, transparent);
   filter: drop-shadow(0 0 10px rgba(114, 110, 255, 0.9));
 }
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.banner-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: brown;
+}
+
+.banner-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+}

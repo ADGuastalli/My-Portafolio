@@ -9,6 +9,8 @@ const titleClass =
   "text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center";
 const descriptionClass = "text-base sm:text-lg md:text-xl lg:text-2xl";
 const containerClass = "flex flex-col items-center lg:items-start lg:ml-8";
+const bannerContainerClass = "w-full overflow-hidden";
+const bannerTextClass = "inline-block whitespace-nowrap animate-scroll";
 
 function IndexInicio() {
   return (
@@ -20,7 +22,7 @@ function IndexInicio() {
           ¡ Hola, soy Alexis Dante Guastalli !
         </h2>
         <h3
-          className={`${textBaseClass} text-lg sm:text-xl md:text-2xl lg:text-3xl m-2`}
+          className={`${textBaseClass} text-lg sm:text-xl md:text-2xl lg:text-3xl m-5`}
         >
           Desarrollador Web Full Stack | Front-end | QA Manual
         </h3>
@@ -58,12 +60,22 @@ function IndexInicio() {
           experiencias excepcionales a los usuarios.
         </p>
       </div>
-      <div className="col-span-1 md:col-span-3 flex justify-center">
-        <p className={`${textBaseClass} ${descriptionClass} text-center mt-10`}>
-          Siempre abierto a colaboraciones y oportunidades interesantes.
-          ¡Conéctate conmigo y hablemos sobre cómo podemos crear algo increíble
-          juntos!
-        </p>
+      <div className="col-span-1 md:col-span-3 flex justify-center mt-10">
+        <div className={`${bannerContainerClass}`}>
+          <p
+            className={`${descriptionClass} ${bannerTextClass} text-center p-5 text-green-500 italic`}
+            style={{
+              textShadow: "2px 2px 4px rgba(167, 0, 208, 1)", // Sombra aplicada al texto
+            }}
+          >
+            Available to work &nbsp; Available to work &nbsp; Available to work
+            &nbsp; Available to work &nbsp; Available to work &nbsp; Available
+            to work &nbsp; Available to work &nbsp; Available to work &nbsp;
+            Available to work &nbsp; Available to work &nbsp; Available to work
+            &nbsp; Available to work &nbsp; Available to work &nbsp; Available
+            to work &nbsp; Available to work &nbsp; Available to work &nbsp;
+          </p>
+        </div>
       </div>
     </div>
   );
