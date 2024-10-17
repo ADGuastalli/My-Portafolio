@@ -30,7 +30,7 @@ const MenuItem: React.FC<{
   <li>
     <a
       href={href}
-      className={`block py-2 px-3 text-xl font-bold rounded transition-transform duration-300 transform hover:scale-110 hover:text-violet-700 dark:text-[#E2E9FF] dark:hover:bg-gray-700 dark:hover:text-white ${
+      className={`block py-2 px-3 text-xl font-bold rounded transition-transform duration-300 transform hover:scale-110 hover:text-violet-700 dark:text-[#E2E9FF] dark:hover:text-stone-300 ${
         isActive ? "text-violet-700" : "text-[#402158]"
       }`}
       aria-current={isActive ? "page" : undefined}
@@ -66,7 +66,6 @@ export function IndexNavbar() {
   return (
     <div>
       <nav className="relative md:fixed top-0 left-0 w-full h-full md:w-64 bg-[#C9BFB5] border-r border-[#7D5683] dark:bg-[#402158] z-50">
-        {/* Navbar visible on small screens */}
         <div className="flex justify-between items-center p-4 md:hidden">
           <span className="text-[#402158] font-bold text-2xl dark:text-[#E2E9FF]">
             Mi Portafolio
@@ -89,7 +88,6 @@ export function IndexNavbar() {
           </button>
         </div>
 
-        {/* Menu for larger screens or when menu is open */}
         <div
           className={`${
             isMenuOpen ? "block" : "hidden"
@@ -147,7 +145,6 @@ export function IndexNavbar() {
         </div>
       </nav>
 
-      {/* Always visible Chatbot */}
       <div className="fixed bottom-0 left-0 mb-4 ml-4 z-50">
         <IndexChat />
       </div>
