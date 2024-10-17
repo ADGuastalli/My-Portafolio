@@ -3,14 +3,13 @@ import Image from "next/image";
 import Spline from "@splinetool/react-spline";
 import ImagenMia from "../../../public/Imagen_de_WhatsApp_2024-08-22_a_las_15.13.37_528e0acb-removebg-previewwww.png";
 import style from "./style.module.css";
+import Link from "next/link";
 
 const textBaseClass = "text-[#402158] dark:text-[#E2E9FF]";
 const titleClass =
   "text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center";
 const descriptionClass = "text-base sm:text-lg md:text-xl lg:text-2xl";
 const containerClass = "flex flex-col items-center lg:items-start lg:ml-8";
-const bannerContainerClass = "w-full overflow-hidden";
-const bannerTextClass = "inline-block whitespace-nowrap animate-scroll";
 
 function IndexInicio() {
   return (
@@ -60,22 +59,12 @@ function IndexInicio() {
           experiencias excepcionales a los usuarios.
         </p>
       </div>
-      <div className="col-span-1 md:col-span-3 flex justify-center mt-10">
-        <div className={`${bannerContainerClass}`}>
-          <p
-            className={`${descriptionClass} ${bannerTextClass} text-center p-5 text-green-500 italic`}
-            style={{
-              textShadow: "2px 2px 4px rgba(167, 0, 208, 1)", // Sombra aplicada al texto
-            }}
-          >
-            Available to work &nbsp; Available to work &nbsp; Available to work
-            &nbsp; Available to work &nbsp; Available to work &nbsp; Available
-            to work &nbsp; Available to work &nbsp; Available to work &nbsp;
-            Available to work &nbsp; Available to work &nbsp; Available to work
-            &nbsp; Available to work &nbsp; Available to work &nbsp; Available
-            to work &nbsp; Available to work &nbsp; Available to work &nbsp;
-          </p>
-        </div>
+      <div className="col-span-1 md:col-span-3 flex flex-col items-center px-4 mt-10">
+        <Link href="#contacto">
+          <button className="mt-10 text-xl rounded-full border-2 text-[#e2E9ff] dark:text-[#140e36] border-[#C9bfb5] dark:border-[#7d5683] bg-[#3b9853] dark:bg-[#d2febc] px-6 py-2 font-bold uppercase leading-normal transition duration-150 ease-in-out hover:bg-[#286437] dark:hover:bg-[#bdf3a2] animate-blink">
+            Disponible para Trabajar
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -13,12 +13,12 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
-        scroll: 'scroll 80s linear infinite',
+        blink: 'blink 1s infinite',
       },
       keyframes: {
-        scroll: {
-          '-10%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(-100%)' },
+        blink: {
+          '0%, 100%': { opacity: "1" },
+          '50%': { opacity: "0.7" },
         },
       },
     },

@@ -128,7 +128,7 @@ export function IndexNavbar() {
               <MenuItem href="#contacto" text="Mis Contacto" isActive={false} />
             </ul>
             <Link
-              href="https://drive.google.com/file/d/1psLuBKFZOg5QxF_H1ogPlW2WBV6SHskF/view?usp=sharing"
+              href="https://drive.google.com/file/d/1XukW7OvWA6KqzbZ9X0wXHT2kzfnffvE6/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >

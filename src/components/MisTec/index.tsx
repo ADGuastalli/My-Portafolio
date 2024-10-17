@@ -10,6 +10,8 @@ import ImgPosgres from "../../../public/svg/tec/postgresql-svgrepo-com.svg";
 import ImgHtml from "../../../public/svg/tec/html5-01-svgrepo-com.svg";
 import ImgCss from "../../../public/svg/tec/css3-svgrepo-com.svg";
 import ImgPyt from "../../../public/svg/tec/python-svgrepo-com.svg";
+import ImgGit from "../../../public/svg/tec/github-142-svgrepo-com.svg";
+import ImgAppSheet from "../../../public/svg/tec/appsheet.svg";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -30,6 +32,8 @@ const techItems: TechItemProps[] = [
   { img: ImgTailwind, alt: "Tailwind CSS", label: "Tailwind CSS" },
   { img: ImgExpress, alt: "Express", label: "Express" },
   { img: ImgPosgres, alt: "PostgreSQL", label: "PostgreSQL" },
+  { img: ImgGit, alt: "Github", label: "Github" },
+  { img: ImgAppSheet, alt: "Appsheet", label: "Appsheet" },
 ];
 
 const learningTech: TechItemProps[] = [
